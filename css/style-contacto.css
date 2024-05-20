@@ -1,0 +1,143 @@
+/* Formulario -----------------------------------------------------------------------------------------------*/
+
+.titulo-contact {
+    color: #084602;
+    font-size: 1.3rem;
+    margin-right: 50px;
+    margin-top: 600px;
+}
+
+.titulo-contact li {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.body-formulario {
+    background: url(/Img/AdobeStock_235368298-1583843006-scaled.jpeg) no-repeat center center cover;
+    font-family: "Nunito Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 50px;
+   
+}
+
+form {
+    background-color: rgba(218, 210, 184, 0.418);
+    padding: 55px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 650px;
+    height: 1020px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.btn-contacto {
+    padding: 15px 100px;
+    margin: 10px 0 0 0;
+    /* flex-direction: column; */
+    /* text-align: center; */
+    /* color: #283629; */
+    font-size: 15px;
+    /* color: #283629 */
+}
+
+.h2-contacto {
+    color: #283629;
+    font-size: 2rem;
+}
+
+label {
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/*  */
+input,
+textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #dcf5dc91;
+    border: 2px solid #ffffff;
+    color: #362831;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #283629;
+}
+
+.button {
+    margin-right: px;
+}
+
+.btn-contacto {
+    margin-bottom: 20px;
+}
+
+.form-terms {
+    margin-bottom: 30px;
+    /* display: flex; */
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-terms a {
+    color: #33794f;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn-contacto {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #76b28e;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+}
+
+.btn-contacto:hover {
+    background-color: #73cf6f;
+}
+
+#localidad{
+    display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+    margin-bottom: 15px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+#localidad:hover{
+	background: #ffffff91;
+    margin-top: 3px;
+}

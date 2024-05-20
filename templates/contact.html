@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/d7840b5476.js" crossorigin="anonymous"></script>
+    <!-- ANIMATE-CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <!--FAVICON  -->
+    <link rel="icon" href="/img/icons8-box-64.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="/index.html">Cargo Box</a>
+            <!-- <p class="logo">Cargo Box</p> -->
+            <nav>
+                <a href="/templates/registro.html">Cuenta</a>
+                <a href="/templates/cotizacion.html">Cotizacion</a>
+                <a href="/templates/contact.html">Contacto</a>
+
+                <!-- <a href="/templates/contact.html">Contacto</a> -->
+            </nav>
+        </div>
+    
+    </header>
+
+    <section id="content">
+        <!-- <a class="logo" href="/index.html">Cargo Box</a> -->
+        <h1 class="logo-contact">Contáctenos</h1>
+        <div class="container">
+            <div class="contact-form">
+                <h3>Los campos con <span>*</span> son obligatorios</h3>
+                <form id="form" action="" method="post">
+
+                    <p>
+                        <label for="Nombre">Nombre y apellido <span>*</span></label>
+                        <input type="text" name="nombreyapellido" id="nombre">
+                        <span id="error-nombre" class="error-message" style="color: red"></span>
+                    </p>
+
+                    <p>
+                        <label for="address">Direccion</label>
+                        <input type="text" name="direccion" id="direccion">
+                    </p>
+                    <p>
+                        <label for="provincia">Provincia<span>*</span></label>
+                        <select name="provincia" id="select-provincia">
+                            <option value="opcion1" selected>Elija una Provincia</option>
+                            <option value="opcion2">Buenos Aires</option>
+                            <option value="opcion3">Catamarca</option>
+                            <option value="opcion4">Chaco</option>
+                            <option value="opcion5">Chubut</option>
+                            <option value="opcion6">Córdoba</option>
+                            <option value="opcion7">Corrientes</option>
+                            <option value="opcion8">Entre Ríos</option>
+                            <option value="opcion9">Formosa</option>
+                            <option value="opcion10"> La Pampa</option>
+                            <option value="opcion10">La Rioja</option>
+                            <option value="opcion10">Mendoza</option>
+                            <option value="opcion10"> Misiones</option>
+                            <option value="opcion10">Neuquen</option>
+                            <option value="opcion10">Río Negro</option>
+                            <option value="opcion10">Salta</option>
+                            <option value="opcion10">Jujuy</option>
+                            <option value="opcion10">San Juan</option>
+                            <option value="opcion10">San Luís</option>
+                            <option value="opcion10">Santa Cruz</option>
+                            <option value="opcion10">Santa Fe</option>
+                            <option value="opcion10">Santiago</option>
+                        </select><br>
+                        <span id="error-provincia" class="error-message" style="color: red"></span>
+                    </p>
+                    <p>
+                        <label for="codigo-postal">Codigo postal</label>
+                        <input type="text" name="codigopostal" id="codigo-postal">
+                    </p>
+
+                    <p>
+                        <label for="phone">Telefono<span>*</span></label>
+                        <input type="tel" name="telefono" id="phone">
+                        <span id="error-phone" class="error-message" style="color: red"></span>
+                    </p>
+                    <p>
+                        <label for="email">E-Mail<span>*</span></label>
+                        <input type="email" name="email" id="email">
+                        <span id="error-email" class="error-message" style="color: red"></span>
+                    </p>
+                    <p class="block">
+                        <label for="message"></label>
+                        <textarea name="message" rows="10" id="mensaje" placeholder="Escriba su mensaje"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">Enviar</button>
+                    <p class="warnings" id="warnings"></p>
+                    </p>
+                </form>
+                <!-- Privacidad y condiciones -->
+                <div class="form-terms">
+                    <input id="checkbox" type="checkbox" />
+                    <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label><br>
+                    <span id="error-checkbox" class="error-message" style="color: red"></span>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Info</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"> Avenida Siempre Viva 743 </i></li>
+                    <li><i class="fa-solid fa-phone-volume">11-40362905</i></li>
+                    <li><i class="fa-solid fa-envelope-open-text">helpbox@cargo.com</i></li>
+                </ul>
+                <p>
+                    Nuestra relación con vos es muy importante, nos gustaría recibir tu opinión para saber cómo estamos
+                    haciendo nuestro trabajo. Por favor tómate unos minutos para enviarnos tus preguntas, comentarios o
+                    sugerencias, y te responderemos a la brevedad.
+                </p>
+                <p>
+                    cargobox.com
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+    <script src="/templates/prueba.js"></script>
+    <footer>
+        <div class="footer-links">
+            <div class="footer-container">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>NUESTRA COMPAÑÍA</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Acerca de Cargo Box</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuestro Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Relacion con los inversores</a>
+                    </li>
+                    <li>
+                        <a href="#">Empleos</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>CONSEJOS</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Tips para embalar</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>PRODUCTOS</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">CB Personal</a>
+                    </li>
+                    <li>
+                        <a href="#">CB Standard</a>
+                    </li>
+                    <li>
+                        <a href="#">CB Plus</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>MAS SOBRE CARGO</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Cargo Developer Portal</a>
+                    </li>
+                    <li>
+                        <a href="#">Cargo Compatible</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <h3>&copy; Cargo Box 2024</h3>
+        </div>
+    </footer>
+    <script src="/JS/validacion.js"></script>
+
+</body>
+
+</html>

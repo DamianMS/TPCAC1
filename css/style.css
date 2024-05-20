@@ -1,0 +1,701 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    background: rgb(240, 240, 240);  
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em ;
+}
+p{
+    font-size: 1.25em;
+}
+li{
+    font-size: 1.25em;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight:bold;
+    padding: 7px 15px;
+    border-radius: 15px ;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(221, 213, 213);
+    background-color:rgb(131, 50, 207);
+}
+
+button:hover{
+    background-color:rgb(165, 136, 194);
+    transition: 2s;
+    color: #fcfffc;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(215, 215, 215);
+    z-index: 2;
+}
+
+.logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 3.5em;
+    text-decoration: none;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    font-size: 1.5em;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    text-align:center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("/img/descarga.jpeg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position:center center;
+     text-shadow: #000000 0 0 7px;
+}
+
+#hero h1{
+    font-size: 6.5vh;
+    margin-left: 50px;
+    text-shadow: #ffffff 0 0 2px;
+}
+
+#hero button{
+    margin-left: 230px;
+    font-size: 1.75em;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
+}
+#pro{
+    background-color: #acacac;
+}
+#pro .container{
+    display: flex;
+    
+}
+#pro .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#pro h2{
+    margin-top: 0;
+}
+
+#pro .img-container{
+    background-image:  url("/img/Girteka_EB065-1920x1280.jpg.webp");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);  
+}
+
+#pro .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#nuestras-paginas{
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#nuestras-paginas .container{
+    padding: 150px 12px;
+}
+
+#nuestras-paginas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestras-paginas p{
+    display: none;
+}
+
+#nuestras-paginas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+#nuestras-paginas button{
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
+}
+
+.carta:first-child{
+    color: rgb(245, 245, 245);
+    text-shadow: #020202 0 0 7px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    )
+     ,url("/img/Loading-Unloading-Services.jpg");
+}
+
+.carta:nth-child(2){
+    color: rgb(245, 245, 245);
+    text-shadow: #020202 0 0 7px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    )
+     ,url("/img/1920_dnataawardedmulti-yearcargocontractwithmaerskairfreightatcolognebonnairport.jpg");
+}
+
+.carta:last-child{
+    color: rgb(245, 245, 245);
+    text-shadow: #020202 0 0 7px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    )
+     ,url("/img/16-9-4-1422x800.jpg");
+ }
+
+ #map {
+    color: white;
+    
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    )
+     ,url("/img/maparg.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position:center center;
+     overflow: hidden;
+     margin-bottom: 50px;
+     
+ }
+ #map h2{
+    color: rgb(255, 255, 255);
+    
+    display: flex;
+    text-shadow: #000000 0 0 5px;
+    align-items:flex-start;
+    justify-content: center;
+    text-align:center;
+    flex-direction: column;
+    margin-bottom: 690px;
+    font-size: 3em;
+ }
+
+ #map .container {
+    margin-top: 300px;
+    margin-right: 400px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mapa {
+    position: absolute;
+    width:1800px;  
+}
+
+#banner-final{
+    min-height: 65vh;
+    position: relative;
+}
+.contenedor{
+    color: white;
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    width: 100%;
+    margin-left: 10px;
+    position: relative;
+    text-shadow: #ffffff 0 0 4px;
+    z-index: 1;
+}
+.contenedor h1{
+    font-size: 5.7vh;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
+    flex-direction: column;
+    
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#social {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#social p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#social .container{
+    padding: 20px;
+}
+#social .container p{
+    font-size: 4vh;
+}
+
+#social .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#social .links a {
+    color: #333;
+    font-size: 5vh;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0 10px 30px;
+}
+
+#social .links a:hover {
+    color: #007bff;
+}
+
+.footer-links {
+    background: #4a505c;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container a {
+    color: #FFFFFF;
+    text-decoration: none;
+    
+}
+
+.footer-container ul {
+    margin: 0 auto;
+    list-style:none;
+
+
+}
+
+.footer-container ul li {
+    line-height: 2.8;
+
+}
+
+.footer-copy {
+    background: #2f3640;
+    color: #616161;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    
+
+}
+.footer-copy h3{
+    margin: 0;
+    padding: 10px;
+    
+}
+/* ----------------------------------------------CONTACTO --------------------------------------------------*/
+
+#content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+.logo-contact{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3em; 
+    margin-top: 100px;
+}
+#content .container{
+    margin: 0 0 100px ;
+    /* margin-bottom: 100px; */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+#content .container > * {
+    padding: 1em;
+}
+
+
+#content .contact-form{
+    background:#47474798
+   
+
+}
+#content .contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#content .contact-form form .block{
+    grid-column: 1 / 3 ;
+
+}
+
+#content .contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+
+
+#content .contact-form form input,
+#content .contact-form form textarea{
+    width: 100% ;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid #575757;
+}
+#content .contact-form h3{
+    font-size: 1em;
+    text-align: center;
+}
+
+#content .contact-form h3,
+#content .contact-form p{
+    color: rgb(255, 255, 255);
+    
+}
+
+#content .contact-form form button{
+    border: 0 ;
+    margin-left: 43%;
+    
+}
+#content .contact-form span{
+    color: #1d1313;
+
+
+}
+
+#content .contact-info{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("/img/secretaria2ref.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+     
+}
+#content .contact-info h4, #content .contact-info ul, #content .contact-info p {
+    color: white;
+    font-size: 1.2em;
+    text-shadow: black;
+    text-align: center;
+    margin: 70px 0 1rem 0;
+    text-shadow: #020202 0 0 4px;
+}
+#content .contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+#content .contact-info ul li{
+    padding: 0.5em;
+    
+}
+
+#form ::placeholder{
+    color: white;
+    font-size: 1.1em;
+}
+
+.form-terms{
+    color: #000000be;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 50px;
+    
+}
+.form-terms a{
+    color: rgb(109, 35, 35);
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: brown;
+    padding-top: 20px;
+}
+
+/* --------------------------------------------------REGISTRO---------------------------------------------- */
+#hero-service{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    text-align:center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("/img/7654-1024x576.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position:center center;
+     text-shadow: #000000 0 0 7px;
+     padding-left: 200px;
+}
+
+
+
+
+#content .registro-info{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("/img/tipeando.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;  
+}
+
+#content .registro-info p{
+    color: white;
+    font-size: 1.2em;
+    text-shadow: black;
+    text-align: center;
+    padding-top: 150px;
+    margin: 70px 0  0;
+    text-shadow: #020202 0 0 4px;
+}
+
+#content .registro-info ul{
+    list-style: none;
+    padding: 0;
+}
+#content .registro-info ul li{
+    padding: 0.5em;
+    
+}
+
+/* ------------------------------------------------SERVICIOS------------------------------------------------- */
+#pro-service{
+    margin-bottom: 100px;
+}
+#pro-service .texto h2{
+    color: #64126e;
+} 
+#pro-service .texto h3{
+    color: #942e7a;
+} 
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+    #pro .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    
+    #nuestras-paginas .pages {
+        display: flex;
+        justify-content: center;
+    } 
+    #nuestras-paginas p{
+        display: block;
+        margin-bottom: 30px;
+    } 
+    #nuestras-paginas h2{
+        font-size: 4em;
+    } 
+
+    #nuestras-paginas h3{
+        margin-top: 0;
+    }
+    #nuestras-paginas .carta{
+        padding: 50px;
+    } 
+    
+    #content .container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    #content .container{
+        padding: 0em;
+    }
+
+    #content .contact-info h4
+    #content .contact-info ul
+    #content .contact-info p {
+        padding: 1em;
+        text-align: left;
+        
+
+    }
+    #content .contact-info{
+        
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("/img/callcenter.webp");
+         
+    } 
+
+    #content .registro-info{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+     ,url("/img/laptops_para_estudiantes.webp");
+
+    }
+    
+}  
+@media (max-width: 950px){
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    /* #map h2{
+        
+        margin-bottom: 530px;
+        
+    }  */
+
+}
+@media (max-width: 500px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+
+
+
+
+
+
+
+    

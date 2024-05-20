@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/d7840b5476.js" crossorigin="anonymous"></script>
+    <!-- ANIMATE-CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <!--FAVICON  -->
+    <link rel="icon" href="/img/icons8-box-64.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="/index.html">Cargo Box</a>
+            <nav>
+                <a href="/templates/registro.html">Cuenta</a>
+                <a href="/templates/cotizacion.html">Cotizacion</a>
+                <a href="/templates/contact.html">Contacto</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <section id="content">
+        <h1 class="logo-contact">Registrate</h1>
+        <div class="container">
+            <div class="contact-form">
+                <h3>Los campos con <span>*</span> son obligatorios</h3>
+                <form id="form" action="" method="post">
+
+                    <p>
+                        <label for="nombre">Nombre<span>*</span></label>
+                        <input type="text" name="nombre" id="nombre" required>
+                        <span id="error-nombre" class="error-message" style="color: red"></span>
+                    </p>
+                    <p>
+                        <label for="apellido">Apellido<span>*</span></label>
+                        <input type="text" name="apellido" id="apellido" required>
+                        <span id="error-apellido" class="error-message" style="color: red"></span>
+                    </p>
+                    <p>
+                        <label for="direccion">Direccion<span>*</span></label>
+                        <input type="text" name="direccion" id="direccion" required>
+                        <span id="error-direccion" class="error-message" style="color: red"></span>
+                    </p>
+                    <p>
+                        <label for="provincia">Provincia<span>*</span></label>
+                        <select name="provincia" id="select-provincia">
+                            <option value="opcion1" selected>Elija una Provincia</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Ríos">Entre Ríos</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquen">Neuquen</option>
+                            <option value="Río Negro">Río Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luís">San Luís</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Santiago">Santiago</option>
+                        </select><br>
+                        <span id="error-provincia" class="error-message" style="color: red"></span>
+                    </p>
+                    <p>
+                        <label for="birthdate">Fecha de Nacimiento</label>
+                        <input type="date" name="birthdate" id="birthdate" required>
+                        <span id="error-birthdate" class="error-message" style="color: red"></span>
+                    </p>
+                    <p>
+                        <label for="phone">Telefono<span>*</span></label>
+                        <input type="tel" name="telefono" id="phone" required>
+                        <span id="error-phone" class="error-message" style="color: red"></span>
+                    </p>
+                    <p>
+                        <label for="email">E-Mail<span>*</span></label>
+                        <input type="email" name="email" id="email">
+                        <span id="error-email" class="error-message" style="color: red"></span>
+                    </p>
+                    <p>
+                        <label for="password">Contraseña<span>*</span></label>
+                        <input type="password" name="password" id="password" required>
+                        <span id="error-password" class="error-message" style="color: red"></span>
+                    </p>
+                    <p class="block">
+                        <button type="submit">Enviar</button>
+                    <p class="warnings" id="warnings"></p>
+                    </p>
+                </form>
+                <div class="form-terms">
+                    <input id="checkbox" type="checkbox" />
+                    <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label><br>
+                    <span id="error-checkbox" class="error-message" style="color: red"></span>
+                </div>
+            </div>
+            <div class="registro-info">
+                
+                <!-- <ul>
+                    <li><i class="fa-solid fa-location-dot"> Avenida Siempre Viva 743 </i></li>
+                    <li><i class="fa-solid fa-phone-volume">11-40362905</i></li>
+                    <li><i class="fa-solid fa-envelope-open-text">helpbox@cargo.com</i></li>
+                </ul> -->
+                <p>¡Te damos la bienvenida! Comencemos.
+                    Ingresa tus detalles a continuación para crear tu ID de usuario. <br>
+                    Ahorra 20 % al registrarte en una cuenta CargoBox con una tarjeta de crédito. Las herramientas de
+                    gestión de la cuenta en línea incluyen soporte de documentos aduanales, gestión de usuario y mucho
+                    más.
+                </p>
+                <p>
+                    cargobox.com
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="/templates/prueba.js"></script>
+    <footer>
+        <div class="footer-links">
+            <div class="footer-container">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>NUESTRA COMPAÑÍA</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Acerca de Cargo Box</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuestro Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Relacion con los inversores</a>
+                    </li>
+                    <li>
+                        <a href="#">Empleos</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>CONSEJOS</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Tips para embalar</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>PRODUCTOS</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">CB Personal</a>
+                    </li>
+                    <li>
+                        <a href="#">CB Standard</a>
+                    </li>
+                    <li>
+                        <a href="#">CB Plus</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>MÁS SOBRE CARGO</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Cargo Developer Portal</a>
+                    </li>
+                    <li>
+                        <a href="#">Cargo Compatible</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <h3>&copy; Cargo Box 2024</h3>
+        </div>
+    </footer>
+    <script src="/JS/validacion.js"></script>
+
+
+
+</body>
+
+</html>
+
+
+</html>
